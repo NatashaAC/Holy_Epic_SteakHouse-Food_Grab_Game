@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    color: #d9d9db;
+    background-color: #000022;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+main {
+    text-align: center;
+    color: #E6E5E5;
+}
+
+/*************** Contest Page ****************/
+#gameTitle {
+    position: absolute;
+    width: 800px; 
+    height: 550px;
+    margin: 0 auto;
+    background-color: #BF834F;
+    opacity: 0.9;
+}
+
+#gameTitleTxt {
+    margin: 50px 25px;
+}
+
+#gameTitleTxt h2 {
+    font-size: 3.125em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+#gameTitleTxt ul {
+    list-style-type: none;
+    font-family: 'Source Code Pro';
+}
+
+#gameTitleTxt ul li p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#game {
+    width: 800px; 
+    height: 550px;
+    transform: translateY(5%);
+    position: relative;
+    margin: 0 auto;
+    background-image: url("../images/game_area_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startButton {
+    display: block;
+    margin: 15px auto;
+    padding: 5px 10px;
+    background-color: #c7884b;
+    color: #E6E5E5;
+    border: 2px solid #E6E5E5;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#startButton:hover {
+    background-color: #E6E5E5;
+    color: #c7884b;
+    border: 2px solid #c7884b;
+}
+
+#steakDish, #dumplinDish, #ramenDish, #sushiDish, #burgerDish, 
+#friesDish, #cheeseDish, #cocoDish, #icecreamDish {
+    width: 100px;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+
+#specialSteak {
+    width: 100px;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+
+#scoreText {
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #c7884b;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.gameRules {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+.foodItems {
+    width: 45px;
+    height: auto;
+}
+
+/**************** FOOTER ****************/
+.footer {
+    background-color: #000022;
+    border-top: 1px solid #d9d9db;
+    text-align: center;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footerArticle {
+    font-size: 0.8em;
+    color: #d9d9db;
+    padding: 10px;
+}
+
+.socialIcons a i {
+    color: #467ECE;
+    padding-left: 20px;
+}
+
+ul .socialIcons {
+    list-style: none;
+    display: inline;
+    font-size: 25px;
+}
